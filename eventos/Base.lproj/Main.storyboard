@@ -36,15 +36,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="160.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-r9-j4D">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del evento" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-r9-j4D">
                                                     <rect key="frame" x="20" y="113" width="274" height="37"/>
                                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="32"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyL-4j-uZc">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyL-4j-uZc">
                                                     <rect key="frame" x="352" y="11" width="48" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -58,8 +57,10 @@
                                                 <constraint firstItem="jyK-YU-dSw" firstAttribute="top" secondItem="59J-XC-9zi" secondAttribute="top" id="R1w-X0-k8H"/>
                                                 <constraint firstItem="5Wi-r9-j4D" firstAttribute="leading" secondItem="59J-XC-9zi" secondAttribute="leadingMargin" id="T38-UF-jYZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="94h-nP-LnS" secondAttribute="bottom" id="Tbg-Ne-GNo"/>
+                                                <constraint firstAttribute="trailing" secondItem="oyL-4j-uZc" secondAttribute="trailing" constant="14" id="VT1-h0-bFZ"/>
                                                 <constraint firstItem="94h-nP-LnS" firstAttribute="leading" secondItem="59J-XC-9zi" secondAttribute="leading" id="dKH-ab-wq4"/>
                                                 <constraint firstAttribute="trailing" secondItem="94h-nP-LnS" secondAttribute="trailing" id="fKw-mb-Len"/>
+                                                <constraint firstItem="oyL-4j-uZc" firstAttribute="top" secondItem="59J-XC-9zi" secondAttribute="top" constant="11" id="ikh-bz-roy"/>
                                                 <constraint firstItem="5Wi-r9-j4D" firstAttribute="bottom" secondItem="59J-XC-9zi" secondAttribute="bottomMargin" id="lGn-wd-wjB"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -86,6 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0mr-ID-qFj"/>
+                    <connections>
+                        <outlet property="tvEventos" destination="1v3-qE-mNA" id="vae-Y0-b5N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
